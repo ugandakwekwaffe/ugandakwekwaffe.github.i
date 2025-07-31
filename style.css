@@ -57,7 +57,7 @@ Version: 1.0.0
 
 ***/
 
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&amp;family=Exo:wght@300;400;500;600;700;800;900&amp;display=swap");
+@import url("css2.css");
 
 /*
 font-family: 'Archivo', sans-serif;
@@ -69,199 +69,16 @@ font-family: 'Exo', sans-serif;
 @import url("animate.css");
 @import url("owl.css");
 @import url("jquery-ui.min.css");
-@import url("jquery.fancybox.min.css");
+@import url("jquery.fancybox.min-1.css");
 @import url("jquery.bootstrap-touchspin.css");
-
-
-
-
 
 /*** 
 
 ====================================================================
-  whatsapp
+  Reset
 ====================================================================
 
 ***/
-
-/*whatsapp*/
-    
-@keyframes slideInFromRight {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.whatsapp-container {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
-
-.whatsapp-home-icon {
-    position: fixed;
-    top: 88%;
-    right: 5%;
-    font-size: 50px;
-    color: #25D366;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    opacity: 0; /* Initially hidden */
-    animation: slideInFromRight 0.5s ease forwards; /* Apply animation */
-    
-}
-
-.whatsapp-home-icon span {
-    margin-left: 10px;
-    font-size: 16px;
-    color:#25D366 ;
-}
-        #whatsapp-popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 47.2%;
-            transform: translate(-50%, -50%);
-            width: 320px;
-            height: 480px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            overflow: hidden;
-            z-index: 1000;
-            flex-direction: column;
-        }
-        .chat-header {
-            background-color: #075E54;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .chat-header img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-        .chat-header .status {
-            font-size: 14px;
-            color: #D5F5E3;
-            position: absolute;
-            top: 10%;
-            right: 50%;
-        }
-        .chat-header .close-popup {
-            cursor: pointer;
-            font-size: 20px;
-            color: white;
-        }
-        .chat-messages {
-            flex: 1;
-            padding: 10px;
-            overflow-y: auto;
-            background-color: #ece5dd;
-        }
-        .message {
-            display: flex;
-            align-items: flex-start;
-            margin: 10px 0;
-            max-width: 70%;
-        }
-        .message img {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-        .message-bubble {
-            padding: 10px;
-            border-radius: 10px;
-            background-color: white;
-            display: inline-block;
-            position: relative;
-        }
-        .message.sent {
-            margin-left: auto;
-            position: relative;
-        }
-        .message.sent .blue-tick {
-            font-size: 12px;
-            color: #34B7F1; /* WhatsApp blue tick color */
-            position: absolute;
-            bottom: 5px;
-            left: -15px;
-        }
-        .message.sent .message-bubble {
-            background-color: #DCF8C6;
-        }
-        .chat-footer {
-            display: flex;
-            padding: 10px;
-            background-color: white;
-            border-top: 1px solid #ddd;
-            align-items: center;
-        }
-        .chat-footer input {
-            flex: 1;
-            padding: 10px;
-            border: none;
-            border-radius: 20px;
-            background-color: #f0f0f0;
-            margin-right: 10px;
-            outline: none;
-        }
-        .chat-footer button {
-            background-color: #075E54;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-        .emoji-icon {
-            font-size: 24px;
-            color: #075E54;
-            margin-right: 10px;
-            cursor: pointer;
-        }
-        .emoji-popup {
-            display: none;
-            position: absolute;
-            bottom: 60px;
-            left: 20px;
-            background: white;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            z-index: 1001;
-        }
-        .emoji-popup span {
-            font-size: 24px;
-            cursor: pointer;
-            margin: 5px;
-        }
-        .typing {
-            display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-            animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
-        }
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        @keyframes blink-caret {
-            from, to { border-right: 2px solid transparent; }
-            50% { border-right: 2px solid black; }
-        }
 
 * {
     margin: 0px;
@@ -272,87 +89,6 @@ font-family: 'Exo', sans-serif;
 }
 
 
-  /* Contact Section */
-        .contact {
-            padding: 80px 0;
-            background-color: white;
-        }
-        
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: var(--light-color);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-family: inherit;
-        }
-        
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
-        }
-        
-        .submit-btn {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 4px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: var(--transition);
-            width: 100%;
-        }
-        
-        .submit-btn:hover {
-            background-color: var(--secondary-color);
-        }
-        
-        /* Social Media */
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        
-        .social-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: 50%;
-            transition: var(--transition);
-        }
-        
-        .social-link:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-3px);
-        }
-        
-        /* Footer */
-
 /*** 
 
 ====================================================================
@@ -362,9 +98,9 @@ Global Settings
 ***/
 
 body {
-    font-size: 2.5vmin;
-   
-    line-height: 10px;
+    font-size: 16px;
+    color: #363636;
+    line-height: 28px;
     font-weight: 400;
     background: #ffffff;
     -webkit-font-smoothing: antialiased;
@@ -399,27 +135,27 @@ h6 {
 }
 
 h1 {
-    font-size: 5vmin;
+    font-size: 50px;
 }
 
 h2 {
-    font-size: 4vmin;
+    font-size: 35px;
 }
 
 h3 {
-    font-size: 3vmin;
+    font-size: 30px;
 }
 
 h4 {
-    font-size: 3vmin;
+    font-size: 24px;
 }
 
 h5 {
-    font-size: 2vmin;
+    font-size: 20px;
 }
 
 h6 {
-    font-size: 3vmin;
+    font-size: 17px;
 }
 
 section {
@@ -438,16 +174,13 @@ button {
     min-width: auto;
 }
 
-
-
 p,
 .text {
-    font-size: 2.5vmin;
+    font-size: 16px;
     line-height: 30px;
-color: silver;
-    font-weight: 500;
+    color: #555555;
+    font-weight: 400;
     margin: 0;
-     font-family: 'Poppins', sans-serif;
 }
 
 ::-webkit-input-placeholder {
@@ -1143,7 +876,7 @@ Owl Carousel Arrows
   width: 100%;
   background-color: #ffffff;
   z-index: 9999;
-  background-image: url(./gallery/preloader.gif);
+  background-image: url("");
   background-size: 250px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1430,7 +1163,7 @@ hr {
 .icon-circle-1 {
     width: 315px;
     height: 315px;
-    background-image: url(./gallery/circle-1.png);
+    background-image: url("circle-1.png");
     -webkit-animation: fa-spin 30s infinite;
     animation: fa-spin 30s infinite;
 }
@@ -1438,7 +1171,7 @@ hr {
 .icon-circle-2 {
     width: 300px;
     height: 300px;
-    background-image: url(./gallery/circle-2.png);
+    background-image: url("");
     -webkit-animation: fa-spin 30s infinite;
     animation: fa-spin 30s infinite;
 }
@@ -1446,91 +1179,91 @@ hr {
 .icon-dotted-circle {
     width: 500px;
     height: 500px;
-    background-image: url(./gallery/icon-dotted-circle.png);
+    background-image: url("icon-dotted-circle.png");
 }
 
 .icon-dotted-world {
     width: 430px;
     height: 430px;
-    background-image: url(./gallery/icon-world.png);
+    background-image: url("icon-world.png");
 }
 
 .icon-circle-3 {
     width: 688px;
     height: 688px;
-    background-image: url(./gallery/circle-3.png);
+    background-image: url("");
 }
 
 .icon-circle-4 {
     width: 140px;
     height: 140px;
-    background-image: url(./gallery/circle-4.png);
+    background-image: url("");
 }
 
 .icon-object-2 {
     width: 57px;
     height: 55px;
-    background-image: url(./gallery/object-2.png);
+    background-image: url("");
 }
 
 .icon-object-3 {
     width: 78px;
     height: 82px;
-    background-image: url(./gallery/object-3.png);
+    background-image: url("");
 }
 
 .icon-object-4 {
     width: 39px;
     height: 39px;
-    background-image: url(./gallery/object-4.png);
+    background-image: url("");
 }
 
 .icon-object-5 {
     width: 39px;
     height: 39px;
-    background-image: url(./gallery/object-5.png);
+    background-image: url("");
 }
 
 .icon-object-10 {
     width: 141px;
     height: 124px;
-    background-image: url(./gallery/object-10.png);
+    background-image: url("");
 }
 
 .icon-object-11 {
     width: 306px;
     height: 308px;
-    background-image: url(./gallery/object-11.png);
+    background-image: url("");
 }
 
 .icon-object-12 {
     width: 66px;
     height: 66px;
-    background-image: url(./gallery/object-12.png);
+    background-image: url("");
 }
 
 .icon-object-13 {
     width: 207px;
     height: 208px;
-    background-image: url(./gallery/object-13.png);
+    background-image: url("");
 }
 
 .icon-object-14 {
     width: 131px;
     height: 131px;
-    background-image: url(./gallery/object-14.png);
+    background-image: url("");
 }
 
 .icon-object-15 {
     width: 79px;
     height: 126px;
-    background-image: url(./gallery/object-15.png);
+    background-image: url("");
 }
 
 .icon-object-16 {
     width: 158px;
     height: 129px;
-    background-image: url(./gallery/object-16.png);
+    background-image: url("");
 }
 
 @-webkit-keyframes bounce-y {
@@ -2291,7 +2024,7 @@ hr {
     z-index: -10;
       animation: fill 1s forwards;
       -webkit-animation: fill 1s forwards;
-      animation: fill 1s forwards;
+      -moz-animation: fill 1s forwards;
       opacity: 1;
 }
 
@@ -2339,7 +2072,7 @@ hr {
     top: 100%;
     width: 100%;
     height: 560px;
-    background-image: url(./gallery/wave.png);
+    background-image: url("wave.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2757,7 +2490,6 @@ hr {
 ====================================================================
 
 ***/
- 
 
 .mobile-header {
     position: relative;
@@ -3134,7 +2866,6 @@ hr {
 .sticky-header .navbar-header {
     display: none;
 }
- 
 
 
 /*** 
@@ -3578,7 +3309,7 @@ Page Title
     top: 0;
     height: 422px;
     width: 422px;
-    background-image: url(./gallery/icon-bull-eye-2.png);
+    background-image: url("");
     content: "";
 }
 
@@ -3696,7 +3427,7 @@ Page Title
     display: block;
     width: 68px;
     height: 5px;
-    background-image: url(./gallery/divider.png);
+    background-image: url("divider.png");
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 30px;
@@ -3706,7 +3437,7 @@ Page Title
     margin: 30px auto 0;
     width: 90px;
     height: 5px;
-    background-image: url(./gallery/divider-centered.png);
+    background-image: url("divider-centered.png");
 }
 
 .sec-title.light h2,
@@ -4336,7 +4067,7 @@ a.ui-button:active,
     right: -210px;
     height: 150px;
     width: 170px;
-    background-image: url(./gallery/object-7.png);
+    background-image: url("");
     z-index: 9;
 }
 
@@ -4345,7 +4076,7 @@ a.ui-button:active,
     bottom: 0;
     height: 220px;
     width: 173px;
-    background-image: url(./gallery/object-8.png);
+    background-image: url("");
     z-index: 9;
 }
 
@@ -4783,7 +4514,7 @@ a.ui-button:active,
     top: 30px;
     height: 230px;
     width: 230px;
-    background-image: url(./gallery/pattern-1.png);
+    background-image: url("");
     content: "";
 }
 
@@ -4865,7 +4596,7 @@ a.ui-button:active,
 .fact-counter-two {
     position: relative;
     max-width: 770px;
-    background-image: url(./gallery/counter-bg.png);
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -4941,7 +4672,7 @@ a.ui-button:active,
     bottom: 50px;
     height: 350px;
     width: 100%;
-    background-image: url(./gallery/pattern-2.png);
+    background-image: url("");
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -5060,7 +4791,7 @@ a.ui-button:active,
     width: 430px;
     height: 430px;
     border-radius: 50%;
-    background-image: url(./gallery/pattern-2.png);
+    background-image: url("");
     content: "";
 }
 
@@ -5125,7 +4856,7 @@ a.ui-button:active,
     bottom: 95px;
     width: 230px;
     height: 43px;
-    background-image: url(./gallery/object-9.png);
+    background-image: url("");
     content: "";
 }
 
@@ -5312,7 +5043,7 @@ a.ui-button:active,
     padding: 100px 0 70px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(./gallery/pattern-3.png);
+    background-image: url("");
 }
 
 .feature-section-two .icon-object-2 {
@@ -5550,7 +5281,7 @@ a.ui-button:active,
     top: -45px;
     height: 196px;
     width: 196px;
-    background-image: url(./gallery/object-1.png);
+    background-image: url("");
     content: "";
     -webkit-transition: all 300ms ease;
     -o-transition: all 300ms ease;
@@ -5744,19 +5475,19 @@ a.ui-button:active,
 }
 
 .fact-counter .counter-column .icon.bg-1:before {
-    background-image: url(./gallery/fun-fact-one.png);
+    background-image: url("fun-fact-one.png");
 }
 
 .fact-counter .counter-column .icon.bg-2:before {
-    background-image: url(./gallery/fun-fact-two.png);
+    background-image: url("fun-fact-two.png");
 }
 
 .fact-counter .counter-column .icon.bg-3:before {
-    background-image: url(./gallery/fun-fact-three.png);
+    background-image: url("fun-fact-three.png");
 }
 
 .fact-counter .counter-column .icon.bg-4:before {
-    background-image: url(./gallery/fun-fact-four.png);
+    background-image: url("fun-fact-four.png");
 }
 
 .fact-counter .counter-column .count-box .count-text {
@@ -5801,7 +5532,7 @@ a.ui-button:active,
 }
 
 .speakers-section:before {
-    background-image: url(./gallery/4.jpg);
+    background-image: url("4.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -5992,7 +5723,7 @@ a.ui-button:active,
 .speakers-section-two {
     padding: 90px 0 50px;
     background-color: #081245;
-    background-image: url(./gallery/10.jpg);
+    background-image: url("");
     overflow: hidden;
 }
 
@@ -6049,7 +5780,7 @@ a.ui-button:active,
     top: 0;
     height: 140px;
     width: 140px;
-    background-image: url(./gallery/curved-border.png);
+    background-image: url("");
     content: "";
     -webkit-transition: all 300ms ease;
     -o-transition: all 300ms ease;
@@ -6657,7 +6388,7 @@ a.ui-button:active,
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: url(./gallery/pattern-4.png);
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -6822,7 +6553,7 @@ a.ui-button:active,
     top: 0;
     height: 113px;
     width: 113px;
-    background-image: url(./gallery/icon-bull-eye.png);
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: left bottom;
     content: "";
@@ -7335,7 +7066,7 @@ a.ui-button:active,
     order: 2;
     background-repeat: no-repeat;
     background-position: center right;
-    background-image: url(./gallery/schedule-1.png);
+    background-image: url("");
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7502,7 +7233,7 @@ a.ui-button:active,
     padding-right: 0;
     padding-left: 40px;
     background-position: center left;
-    background-image: url(./gallery/schedule-2.png);
+    background-image: url("");
 }
 
 .schedule-block-three.even .date .icon {
@@ -7532,15 +7263,15 @@ a.ui-button:active,
 }
 
 .schedule-block-three:nth-child(4n+2) .date {
-    background-image: url(./gallery/schedule-2.png);
+    background-image: url("");
 }
 
 .schedule-block-three:nth-child(4n+3) .date {
-    background-image: url(./gallery/schedule-3.png);
+    background-image: url("");
 }
 
 .schedule-block-three:nth-child(4n+4) .date {
-    background-image: url(./gallery/schedule-4.png);
+    background-image: url("");
 }
 
 
@@ -8010,7 +7741,7 @@ Accordian Box
     top: 0;
     height: 100%;
     width: 55%;
-    background-image: url(./gallery/cta-bg.png);
+    background-image: url("");
     content: "";
     background-repeat: no-repeat;
     background-size: cover;
@@ -8404,7 +8135,7 @@ Accordian Box
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: url(./gallery/pricing-bg.png);
+    background-image: url("pricing-bg.png");
     background-repeat: no-repeat;
     background-position: center right;
     content: "";
@@ -8695,7 +8426,7 @@ Accordian Box
 
 .pricing-block-three .inner-box:hover,
 .pricing-block-three.tagged .inner-box {
-    background-image: url(./gallery/pricing-bg.jpg);
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -8845,7 +8576,7 @@ Accordian Box
 
 .news-section.alternate {
     padding: 100px 0 70px;
-    background-image: url(./gallery/pattern-5.jpg);
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -10658,7 +10389,7 @@ Accordian Box
 
 .subscribe-section {
     position: relative;
-    background-image: url(./gallery/2.jpg);
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -10754,7 +10485,7 @@ Accordian Box
     background-size: cover;
     text-align: center;
     padding: 90px 50px;
-    background-image: url(./gallery/8.jpg);
+    background-image: url("8.jpg");
 }
 
 .subscribe-section-two .content-box .text {
@@ -10824,7 +10555,7 @@ Accordian Box
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(./gallery/3.jpg);
+    background-image: url("3.jpg");
     padding: 100px 0 0;
 }
 
@@ -11248,7 +10979,7 @@ Accordian Box
 ***/
 
 .main-footer.style-two {
-    background-image: url(./gallery/7.jpg);
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 240px;
@@ -11261,7 +10992,7 @@ Accordian Box
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: url(./gallery/pattern-6.png);
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: center;
     content: "";
@@ -11300,7 +11031,7 @@ Accordian Box
 ***/
 
 .main-footer.style-three {
-    background-image: url(./gallery/7.jpg);
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 240px;
@@ -11314,7 +11045,7 @@ Accordian Box
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: url(./gallery/pattern-6.png);
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: center;
     content: "";
@@ -11717,7 +11448,7 @@ Accordian Box
     -o-transition: .5s;
     transition: .5s;
     -webkit-animation: rotate-hour 43200s linear infinite;
-    animation: rotate-hour 43200s linear infinite;
+    -moz-animation: rotate-hour 43200s linear infinite;
 }
 
 .clock-minute {
@@ -11738,7 +11469,7 @@ Accordian Box
     -o-transition: .5s;
     transition: .5s;
     -webkit-animation: rotate-minute 3600s linear infinite;
-    animation: rotate-minute 3600s linear infinite;
+    -moz-animation: rotate-minute 3600s linear infinite;
 }
 
 .clock-second {
@@ -11759,7 +11490,7 @@ Accordian Box
     -o-transition: .5s;
     transition: .5s;
     -webkit-animation: rotate-second 60s linear infinite;
-    animation: rotate-second 60s linear infinite;
+    -moz-animation: rotate-second 60s linear infinite;
 }
 
 .clock-second:after {
@@ -11853,7 +11584,7 @@ Accordian Box
     -webkit-appearance: none;
     -ms-appearance: none;
     -o-appearance: none;
-    background: url(./gallery/icon-select.png) right center no-repeat;
+    background: url("") right center no-repeat;
     color: #666666;
     transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
@@ -13089,7 +12820,7 @@ Accordian Box
     -ms-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
-    background: #ffffff url(./gallery/icon-select.png) right center no-repeat;
+    background: #ffffff url("") right center no-repeat;
     cursor: pointer;
 }
 
@@ -13376,7 +13107,7 @@ Accordian Box
     -ms-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
-    background: #ffffff url(./gallery/icon-select.png) right center no-repeat;
+    background: #ffffff url("") right center no-repeat;
     cursor: pointer;
 }
 
@@ -14346,7 +14077,7 @@ Accordian Box
     background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
-     background-image: url("boxed-bg.html");
+    background-image: url("");
 }
 
 .box-layout .coming-soon{
